@@ -10,9 +10,12 @@
 		049B7AC628B63CA0003C4637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B7AC528B63CA0003C4637 /* AppDelegate.swift */; };
 		049B7AC828B63CA0003C4637 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B7AC728B63CA0003C4637 /* SceneDelegate.swift */; };
 		049B7ACA28B63CA0003C4637 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B7AC928B63CA0003C4637 /* ViewController.swift */; };
-		049B7ACD28B63CA0003C4637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049B7ACB28B63CA0003C4637 /* Main.storyboard */; };
 		049B7ACF28B63CA2003C4637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049B7ACE28B63CA2003C4637 /* Assets.xcassets */; };
 		049B7AD228B63CA2003C4637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049B7AD028B63CA2003C4637 /* LaunchScreen.storyboard */; };
+		049B7ADF28B69735003C4637 /* TotalBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B7ADE28B69735003C4637 /* TotalBillView.swift */; };
+		049B7AE128B69DC8003C4637 /* PersonsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B7AE028B69DC8003C4637 /* PersonsCountView.swift */; };
+		049B7AE628BBAA85003C4637 /* TipsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B7AE528BBAA85003C4637 /* TipsCollectionViewCell.swift */; };
+		049B7AE828BBABA8003C4637 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B7AE728BBABA8003C4637 /* TipsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		049B7AC528B63CA0003C4637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		049B7AC728B63CA0003C4637 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		049B7AC928B63CA0003C4637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		049B7ACC28B63CA0003C4637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		049B7ACE28B63CA2003C4637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049B7AD128B63CA2003C4637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049B7AD328B63CA2003C4637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049B7ADE28B69735003C4637 /* TotalBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalBillView.swift; sourceTree = "<group>"; };
+		049B7AE028B69DC8003C4637 /* PersonsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsCountView.swift; sourceTree = "<group>"; };
+		049B7AE528BBAA85003C4637 /* TipsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCollectionViewCell.swift; sourceTree = "<group>"; };
+		049B7AE728BBABA8003C4637 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		049B7AC428B63CA0003C4637 /* DividingBillInRestaurant */ = {
 			isa = PBXGroup;
 			children = (
-				049B7AC528B63CA0003C4637 /* AppDelegate.swift */,
-				049B7AC728B63CA0003C4637 /* SceneDelegate.swift */,
-				049B7AC928B63CA0003C4637 /* ViewController.swift */,
-				049B7ACB28B63CA0003C4637 /* Main.storyboard */,
+				049B7ADB28B696C8003C4637 /* Application */,
+				049B7ADC28B696E2003C4637 /* ViewControllers */,
+				049B7ADD28B69703003C4637 /* Views */,
 				049B7ACE28B63CA2003C4637 /* Assets.xcassets */,
 				049B7AD028B63CA2003C4637 /* LaunchScreen.storyboard */,
 				049B7AD328B63CA2003C4637 /* Info.plist */,
 			);
 			path = DividingBillInRestaurant;
+			sourceTree = "<group>";
+		};
+		049B7ADB28B696C8003C4637 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				049B7AC528B63CA0003C4637 /* AppDelegate.swift */,
+				049B7AC728B63CA0003C4637 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		049B7ADC28B696E2003C4637 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				049B7AC928B63CA0003C4637 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		049B7ADD28B69703003C4637 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				049B7AE428BBAA71003C4637 /* Cells */,
+				049B7ADE28B69735003C4637 /* TotalBillView.swift */,
+				049B7AE028B69DC8003C4637 /* PersonsCountView.swift */,
+				049B7AE728BBABA8003C4637 /* TipsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		049B7AE428BBAA71003C4637 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				049B7AE528BBAA85003C4637 /* TipsCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +168,6 @@
 			files = (
 				049B7AD228B63CA2003C4637 /* LaunchScreen.storyboard in Resources */,
 				049B7ACF28B63CA2003C4637 /* Assets.xcassets in Resources */,
-				049B7ACD28B63CA0003C4637 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049B7ADF28B69735003C4637 /* TotalBillView.swift in Sources */,
 				049B7ACA28B63CA0003C4637 /* ViewController.swift in Sources */,
 				049B7AC628B63CA0003C4637 /* AppDelegate.swift in Sources */,
+				049B7AE828BBABA8003C4637 /* TipsView.swift in Sources */,
+				049B7AE628BBAA85003C4637 /* TipsCollectionViewCell.swift in Sources */,
+				049B7AE128B69DC8003C4637 /* PersonsCountView.swift in Sources */,
 				049B7AC828B63CA0003C4637 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +191,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		049B7ACB28B63CA0003C4637 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				049B7ACC28B63CA0003C4637 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		049B7AD028B63CA2003C4637 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -217,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,7 +330,7 @@
 				INFOPLIST_FILE = DividingBillInRestaurant/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,7 +358,7 @@
 				INFOPLIST_FILE = DividingBillInRestaurant/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
